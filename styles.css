@@ -14,3 +14,90 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*Mobile first approach*/
+body {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  overflow-x: hidden;
+  font-family: "Red Hat Display", sans-serif;
+}
+.logo {
+  margin-bottom: 4rem;
+}
+.faces {
+  background-image: url("./starter-code/assets/desktop/image-hero-left.png"),
+    url("./starter-code/assets/desktop/image-hero-right.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 100px - 0.8rem) center,
+    calc(50% + 100px + 0.8rem) center;
+  background-size: contain;
+  width: 100vw;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  min-height: 10rem;
+  margin-bottom: 3rem;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--slate_900);
+  line-height: 110%;
+  margin-bottom: 1.5rem;
+}
+.hero p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--slate_600);
+  margin-bottom: 1.5rem;
+}
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 20px 40px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 1rem;
+}
+.button-blue {
+  background-color: var(--cyan_600);
+}
+.button-blue span {
+  color: var(--cyan_300);
+}
+.button-purple {
+  background-color: var(--purple_600);
+  margin-bottom: 0;
+}
+.button-purple span {
+  color: var(--purple_300);
+}
+.number {
+  position: relative;
+  border: 1.5px solid var(--slate_300);
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  color: var(--slate_600);
+  font-weight: 900;
+  margin: 6rem auto 4rem auto;
+}
+.number::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1.5px;
+  height: 80px;
+  background-color: var(--slate_300);
+}
+
