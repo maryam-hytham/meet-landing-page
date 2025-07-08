@@ -1,5 +1,16 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+:root {
+  --white: #fafafa;
+  --slate_600: #87879d;
+  --slate_300: #d1d1df;
+  --slate_900: #28283d;
+  --cyan_600: #4d96a9;
+  --cyan_300: #8fe3f9;
+  --purple_600: #855fb1;
+  --purple_300: #d9b8ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
