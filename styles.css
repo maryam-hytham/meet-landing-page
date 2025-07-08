@@ -76,10 +76,10 @@ button {
 }
 .button-purple {
   background-color: var(--purple_600);
-  margin-bottom: 0;
 }
 .button-purple:hover {
   background-color: #af7ee7;
+  cursor: pointer;
 }
 .button-purple span {
   color: var(--purple_300);
@@ -163,7 +163,7 @@ button {
   font-weight: 400;
 }
 /*Tablets*/
-@media screen and (min-width: 46rem) {
+@media screen and (min-width: 40rem) {
   .faces {
     min-height: 19rem;
     background-image: url(./starter-code/assets/tablet/image-hero.png);
@@ -190,5 +190,36 @@ button {
         rgba(77, 150, 169, 0.9)
       ),
       url(./starter-code/assets/tablet/image-footer.jpg) center/cover no-repeat;
+  }
+  /*Desktop*/
+  @media screen and (min-width: 70rem) {
+    body {
+      padding: 5rem 10rem;
+    }
+    .faces {
+      display: none;
+    }
+    .hero__content {
+      position: relative;
+      padding: 4rem 2rem;
+      background-image: url(./starter-code/assets/desktop/image-hero-left.png),
+        url(./starter-code/assets/desktop/image-hero-right.png);
+      background-repeat: no-repeat;
+      background-position: left, right;
+      margin-left: -12rem;
+      margin-right: -12rem;
+      min-height: 300px;
+      text-align: center;
+    }
+    .footer {
+      margin: -28px -10rem -5rem;
+      padding: 4rem 2rem;
+      background: linear-gradient(
+          rgba(77, 150, 169, 0.9),
+          rgba(77, 150, 169, 0.9)
+        ),
+        url(./starter-code/assets/desktop/image-footer.jpg) center/cover
+          no-repeat;
+    }
   }
 }
