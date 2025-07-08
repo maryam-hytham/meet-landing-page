@@ -124,7 +124,7 @@ button {
 .image__collage img {
   grid-column: span 1;
   grid-row: span 1;
- 
+
   object-fit: cover;
   width: 100%;
   border-radius: 8px;
@@ -217,8 +217,14 @@ button {
       min-height: 300px;
       text-align: center;
     }
-    .image__collage {
-      g
+    .title p {
+      font-size: 1rem;
+    }
+    .title h2 {
+      font-size: 60px;
+    }
+    .middle__content {
+      padding: 0 6rem;
     }
     .footer {
       margin: -28px -10rem -5rem;
@@ -229,6 +235,14 @@ button {
         ),
         url(./starter-code/assets/desktop/image-footer.jpg) center/cover
           no-repeat;
+    }
+    .footer__content {
+      padding: 0 4rem;
+      display: flex;
+      text-align: start;
+      justify-content: center;
+      gap: 4rem;
+      align-items: center;
     }
   }
 }
