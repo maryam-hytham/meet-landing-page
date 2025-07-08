@@ -162,3 +162,33 @@ button {
   line-height: 150%;
   font-weight: 400;
 }
+/*Tablets*/
+@media screen and (min-width: 46rem) {
+  .faces {
+    min-height: 19rem;
+    background-image: url(./starter-code/assets/tablet/image-hero.png);
+    background-position: center;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .image__collage {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+  }
+  .title p {
+    font-size: 0.875rem;
+  }
+  .title h2 {
+    font-size: 2.25rem;
+  }
+  .footer {
+    margin: -28px -2rem -3rem;
+    padding: 4rem 2rem;
+    background: linear-gradient(
+        rgba(77, 150, 169, 0.9),
+        rgba(77, 150, 169, 0.9)
+      ),
+      url(./starter-code/assets/tablet/image-footer.jpg) center/cover no-repeat;
+  }
+}
