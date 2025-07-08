@@ -221,7 +221,7 @@ button {
       font-size: 1rem;
     }
     .title h2 {
-      font-size: 60px;
+      font-size: 40px;
     }
     .middle__content {
       padding: 0 6rem;
@@ -237,12 +237,15 @@ button {
           no-repeat;
     }
     .footer__content {
-      padding: 0 4rem;
+      padding: 0 2rem;
       display: flex;
       text-align: start;
-      justify-content: center;
-      gap: 4rem;
       align-items: center;
+      gap: 6rem;
     }
+     .footer__content button{
+padding: 10px 40px;
+
+     }
   }
 }
