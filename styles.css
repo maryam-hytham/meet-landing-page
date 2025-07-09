@@ -237,15 +237,15 @@ button {
           no-repeat;
     }
     .footer__content {
-      padding: 0 2rem;
-      display: flex;
-      text-align: start;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       align-items: center;
-      gap: 6rem;
+      column-gap: 4rem;
+      width: 100%;
     }
-     .footer__content button{
-padding: 10px 40px;
-
-     }
+    .footer__content h2,
+    .footer__content p {
+      margin-bottom: 0;
+    }
   }
 }
