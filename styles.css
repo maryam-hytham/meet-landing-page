@@ -19,7 +19,7 @@ body {
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   padding: 3rem 2rem;
   gap: 2rem;
@@ -213,7 +213,7 @@ button {
       background-repeat: no-repeat;
       background-position: left, right;
       margin-left: -12rem;
-      margin-right: -12rem;
+      margin-right: -10rem;
       min-height: 300px;
       text-align: center;
     }
